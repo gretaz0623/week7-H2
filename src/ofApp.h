@@ -20,8 +20,9 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-        void add (ofPoint);
-		
+    void add (ofPoint);
+    ofColor color;
+ 
 };
 
 class curve{
@@ -30,13 +31,15 @@ public:
     curve();
     void setup();
     void update();
+    void update2();
     void draw();
-    void draw1();
+    void draw2();
+
     ofPoint p0,p1,p2,p3,t;
     
 private:
     float sTime;
-    float fallSpeed, dScale,dScale1,dScale2;
+    float fallSpeed,dScale,dScale1,dScale2;
     float rX;
     float rY;
     float rZ;
@@ -51,6 +54,7 @@ public:
     circle();
     void update();
     void draw();
+
     ofPoint p0,p1,t;
     
 private:
